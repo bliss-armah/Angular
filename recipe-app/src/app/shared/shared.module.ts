@@ -4,6 +4,7 @@ import { LoaderComponent } from "./loader/loader.component";
 import { PlaceHolderDirective } from "./placeholder/placeholder.directive";
 import { DropdownDirective } from "./dropdown.directive";
 import { CommonModule } from "@angular/common";
+import { LoggingService } from "../logging.service";
 
 @NgModule({
     declarations:[
@@ -21,6 +22,8 @@ import { CommonModule } from "@angular/common";
         PlaceHolderDirective,
         DropdownDirective,
         CommonModule
-    ]
+    ],
+//   providers: [LoggingService],
+
 })
 export class SharedModule {}
